@@ -74,7 +74,7 @@ plot1 <- ggplot(phillips, aes(x = unemp_rate, y = inflation)) +
   geom_point(alpha = 0.3, colour = "steelblue") +
   geom_smooth(method = "lm", colour = "red", se = TRUE) +
   labs(
-    title    = "The Original Phillips Curve (1961–2025)",
+    title    = "The Original Phillips Curve (1961–2026)",
     subtitle = "YoY Inflation vs. Unemployment Rate",
     x        = "Unemployment Rate (%)",
     y        = "Inflation Rate (%)",
@@ -92,7 +92,7 @@ plot2 <- ggplot(phillips, aes(x = unemp_rate, y = inflation_change)) +
   geom_point(alpha = 0.3, colour = "darkorange") +
   geom_smooth(method = "lm", colour = "red", se = TRUE) +
   labs(
-    title    = "Expectations-Augmented Phillips Curve (1961–2025)",
+    title    = "Expectations-Augmented Phillips Curve (1961–2026)",
     subtitle = "Change in Inflation vs. Unemployment Rate",
     x        = "Unemployment Rate (%)",
     y        = "Change in Inflation (pp)",
@@ -124,7 +124,7 @@ phillips <- phillips %>%
 plot3 <- ggplot(phillips, aes(x = unemp_rate, y = inflation, colour = decade)) +
   geom_point(alpha = 0.5) +
   labs(
-    title    = "Phillips Curve by Decade (1961–2025)",
+    title    = "Phillips Curve by Decade (1961–2026)",
     x        = "Unemployment Rate (%)",
     y        = "Inflation Rate (%)",
     colour   = "Decade",
@@ -142,7 +142,7 @@ phillips <- phillips %>%
   mutate(era = case_when(
     date < as.Date("1975-01-01") ~ "1961–1974",
     date < as.Date("2000-01-01") ~ "1975–1999",
-    TRUE                         ~ "2000–2025"
+    TRUE                         ~ "2000–2026"
   ))
 
 plot4 <- ggplot(phillips, aes(x = unemp_rate, y = inflation, colour = era)) +
