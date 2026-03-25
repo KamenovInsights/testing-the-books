@@ -8,7 +8,7 @@ A series by [Kamenov Insights](https://medium.com/@kamenovinsights)
 
 | # | Theory | Blog Post | Code |
 |---|--------|-----------|------|
-| 1 | The Phillips Curve | [Read](LINK_TO_YOUR_POST) | [Code](01-phillips-curve/phillips_curve.R) |
+| 1 | The Phillips Curve | [Read](https://medium.com/@kamenovinsights/testing-the-books-1-the-phillips-curve-fe8cc168c7f7) | [Code](01-phillips-curve/phillips_curve.R) |
 | 2 | Okun's Law (Bulgaria) | Coming soon | — |
 
 ## Requirements
